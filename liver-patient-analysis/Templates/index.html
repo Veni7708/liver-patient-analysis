@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Liver Disease Prediction</title>
+</head>
+<body background="liver.JPG" style="background-repeat:no-repeat; background-size:100% 100%" text='black'>
+<center><h1>
+       <b>
+           <i>
+            Liver Disease Prediction
+     </b>
+           </i> 
+</h1>
+</center>
+</body>
+
+<center><h2> Enter the details to check whether you have liver disease or not!</h2></center>
+
+<h4>
+<form action="/getdata" method="post">
+
+<tr>
+<center><h3>Age</h3><input type='text' name='Age' placeholder='Enter Age' Enter Numerical part required='required'/><br></center>
+</tr>
+<tr>
+<center><h3>Gender</h3><input type='text' name='Gender' placeholder='Enter Male=1 Female=0'  required='required' /><br></center>
+</tr>
+<tr>
+<center><h3>Total_Bilirubin</h3><input type='text' name='Total_Bilirubin' placeholder='Enter 0 for no 1 for yes' required='required'/><br></center>
+</tr>
+<tr>
+<center><h3>Direct_Bilirubin</h3><input type='text' name='Direct_Bilirubin' placeholder='Direct_Bilirubin' required='required' /><br></center>
+</tr>
+<tr>
+<center><h3>Alkaline_Phosphotase</h3><input type='text' name='Alkaline_Phosphotase' placeholder='Alkaline_Phosphotase' required='required' /><br></center>
+</tr>
+<tr>
+<center><h3>Alamine_Aminotransferase</h3><input type='text' name='Alamine_Aminotransferase' placeholder='Alamine_Aminotransferase' required='required' /><br></center>
+</tr>
+<tr>
+<center><h3>Aspartate_Aminotransferase</h3><input type='text' name='Aspartate_Aminotransferase' placeholder='Aspartate_Aminotransferase' required='required' /><br></center>
+</tr>
+<tr>
+<center><h3>Total_Proteins</h3><input type='text' name='Total_Proteins' placeholder='Total_Proteins' required='required'/><br></center>
+</tr>
+<tr>
+<center><h3>Albumin</h3><input type='text' name='Albumin' placeholder='Albumin required='required' /><br></center>
+</tr>
+<tr>
+<center><h3>Albumin_and_Globulin_Ratio</h3><input type='text' name='Albumin_and_Globulin_Ratio' placeholder='Albumin_and_Globulin_Ratio  ' required='required' /><br></center>
+</tr>
+<tr>
+<center><td><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button type="submit" class="btn btn-primary btn-block btn-large"> Predict </button></center>
+</td>
+</tr>
+
+
+</form>
+</h4>
+
+<center><h2>
+<b>
+{{ prediction_text }}
+</b>
+
+</h2></center>
+
+</body>
+</html>
